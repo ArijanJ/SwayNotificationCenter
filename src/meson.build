@@ -125,7 +125,7 @@ executable('swaync',
 )
 
 executable('swaync-client',
-  ['client.vala', constants],
+  ['client.vala', 'databaseManager/databaseManager.vala', 'notiModel/notiModel.vala', constants],
   vala_args: args,
   dependencies: app_deps,
   install: true,
